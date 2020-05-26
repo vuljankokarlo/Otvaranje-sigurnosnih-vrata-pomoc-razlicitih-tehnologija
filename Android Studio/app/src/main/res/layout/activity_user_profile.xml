@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <!--  First name Label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/profile"
+                android:drawablePadding="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center_vertical"
+                android:text="First name:" />
+
+            <TextView
+                android:id="@+id/profileFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+
+        <!--  Last name Label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/profile"
+            android:drawablePadding="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center_vertical"
+            android:text="Last name:" />
+
+        <TextView
+            android:id="@+id/profileLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="" />
+    </LinearLayout>
+
+        <!-- Email Label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/profile"
+            android:drawablePadding="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center_vertical"
+            android:text="Email:" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="" />
+    </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scrollbars="vertical"
+            android:id="@+id/userLogList">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!-- Next Button -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/profileBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="Back"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

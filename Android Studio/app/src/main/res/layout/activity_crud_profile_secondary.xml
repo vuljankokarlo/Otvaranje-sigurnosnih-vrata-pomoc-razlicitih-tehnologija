@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/objectAccessDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_margin="16dp">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/profileAccessDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_margin="16dp">
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateFromAccess"
+        android:hint="Date from"
+        android:layout_margin="16dp"
+        android:paddingBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Date to"
+        android:id="@+id/dateToAccess"
+        android:paddingBottom="32dp"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Save"
+        android:layout_marginRight="16dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/triggerButtonSave"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:layout_marginBottom="80dp"
+    android:orientation="vertical"
+    android:id="@+id/verticalScroll"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ProgressBar
+        android:id="@+id/mainMenuAnim"
+        style="?android:attr/progressBarStyleLarge"
+        android:progressDrawable="@drawable/circular_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/verticalScrollElements"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:id="@+id/expendableList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null"
+            />
+    </LinearLayout>
+
+</LinearLayout>
